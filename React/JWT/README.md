@@ -164,6 +164,23 @@ The code begins with a conditional statement checking if the variable email has 
              setToken(accessToken);
         });
 }
+
+if (currentUser) {
+    // get token and store client
+    const userInfo = { email: currentUser.email };
+    axiosPublic.post('/jwt', userInfo)
+        .then(res => {
+            if (res.data.token) {
+                localStorage.setItem('accessToken', res.data.token);
+                setLoading(false);
+            }
+        })
+}
+else {
+    // TODO: remove token (if token stored in the client side: Local storage, caching, in memory)
+    localStorage.removeItem('access-token');
+    setLoading(false);
+}
 ```
 
 ## Server site --
