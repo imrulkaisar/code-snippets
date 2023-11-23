@@ -4,7 +4,7 @@ This folder contains React-specific code snippets, serving as personal notes and
 
 ## Snippets:
 
-- **JWT (JSON Web Token):** [Link](https://chat.openai.com/c/React/snippet1.js)
+- [**JWT (JSON Web Token):**](https://github.com/imrulkaisar/code-snippets/tree/main/React/JWT)
   Description of what this React snippet does and any additional details.
 -
 
